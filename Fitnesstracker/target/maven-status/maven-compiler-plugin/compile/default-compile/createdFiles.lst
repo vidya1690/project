@@ -1,0 +1,3 @@
+com\fitness\model\Exercise.class
+com\fitness\controller\FitnessHomeController.class
+com\fitness\controller\addMinutes.class
