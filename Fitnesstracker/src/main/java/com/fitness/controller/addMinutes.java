@@ -11,17 +11,17 @@ import com.fitness.model.Exercise;
 public class addMinutes {
 	
 	
-    @RequestMapping(value="/addMinutes")
+    @RequestMapping(value="/addMinute")
 	public String addMiuntes(@ModelAttribute ("exercise") Exercise exercise)
 	{
     	System.out.println("Exercise    "+exercise.getMinutes());
-		return "addMinutes";
+		return "forward:addMoreMinutes";
 	}
-  /*  @RequestMapping(value="/addMoreMinutes")
+    @RequestMapping(value="/addMoreMinutes")
    	public String addMoreMiuntes(@ModelAttribute ("exercise") Exercise exercise)
    	{
        	System.out.println("Exercising  more    "+exercise.getMinutes());
    		return "addMinutes";
    	}
-*/
+
 }
